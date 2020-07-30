@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+return if Movie.any?
+
+require 'csv'
+movies = CSV.read('db/movies.csv', headers: true).map(&:to_h).map { |attrs| Movie.new(attrs) }
+
+Movie.import(movies)
