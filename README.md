@@ -29,6 +29,7 @@ query revenueAverage{
   groupBy {
      releaseDate(timeframe:YEAR) {
       key
+      count
       avg {
         revenue
       }

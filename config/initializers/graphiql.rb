@@ -4,14 +4,15 @@ GraphiQL::Rails.config.initial_query = <<~GRAPHQL
 
   # For some more info have a look here: https://github.com/hschne/graphql-groups-demo
 
-  # You can play around here to see how it works. For example, to retrieve formation about the number of movies per year
+  # You can play around here to see how it works. For example, to find out how many movies were released each year
   # you can use this query.
-  query statistics1 {
-    movies(first: 100) {
-      nodes {
-        id
-        title
+  query moviesPerYear{
+    groupBy {
+       releaseDate(timeframe:YEAR) {
+        key
+        count
       }
     }
   }
+
 GRAPHQL
