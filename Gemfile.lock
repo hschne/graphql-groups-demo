@@ -58,6 +58,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
+    ast (2.4.1)
     bootsnap (1.4.7)
       msgpack (~> 1.0)
     builder (3.2.4)
@@ -74,6 +75,8 @@ GEM
     graphql (1.11.1)
     graphql-groups (0.1.2)
       graphql (~> 1, > 1.9)
+    groupdate (5.0.0)
+      activesupport (>= 5)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     listen (3.1.5)
@@ -96,6 +99,9 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
+    parallel (1.19.2)
+    parser (2.7.1.4)
+      ast (~> 2.4.1)
     pg (1.1.4)
     puma (3.12.6)
     rack (2.2.3)
@@ -127,10 +133,29 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.20.3, < 2.0)
+    rainbow (3.0.0)
     rake (13.0.1)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    regexp_parser (1.7.1)
+    rexml (3.2.4)
+    rubocop (0.89.1)
+      parallel (~> 1.10)
+      parser (>= 2.7.1.1)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.7)
+      rexml
+      rubocop-ast (>= 0.3.0, < 1.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-ast (0.3.0)
+      parser (>= 2.7.1.4)
+    rubocop-rails (2.7.1)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 0.87.0)
+    ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -158,6 +183,7 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
+    unicode-display_width (1.7.0)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -173,17 +199,20 @@ DEPENDENCIES
   graphiql-rails
   graphql
   graphql-groups
+  groupdate
   listen (>= 3.0.5, < 3.2)
   pg
   puma (~> 3.11)
   rails (~> 6.0.0)
+  rubocop
+  rubocop-rails
   sass-rails
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.6.3p62
+   ruby 2.6.6p146
 
 BUNDLED WITH
    2.1.4
