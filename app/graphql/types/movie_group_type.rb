@@ -4,6 +4,8 @@ module Types
   class MovieGroupType < GraphQL::Groups::Schema::GroupType
     scope { Movie.all }
 
+    result_type { MovieGroupResultType }
+
     by :popularity
 
     by :budget
@@ -25,7 +27,7 @@ module Types
     end
 
     def release_date(scope:, timeframe: :year)
-      scope.group_by_period(timeframe, :release_date)
+      scope.group_by_period(timeframe, :release_date, series: false)
     end
   end
 end

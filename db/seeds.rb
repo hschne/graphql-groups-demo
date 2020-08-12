@@ -17,10 +17,3 @@ movies = CSV.read('db/movies.csv', headers: true).map(&:to_h)
 
 Movie.import(movies)
 
-headers = %w[imdb_id popularity budget revenue title runtime release_date release_year]
-
-items = CSV.read('db/original.csv', headers: true).map(&:to_h)
-  .map { |item| item.slice(*headers) }
-  .each { |attrs| attrs['release_date'] = attrs['release_date'].gsub(%r/\/\d{2}$/, "/#{attrs['release_year']}") }
-  .map { |attrs| attrs.except('release_year') }
-CSV.open('db/movies.csv', 'wb', headers: items.first.keys, write_headers: true) { |csv| items.each { |x| csv << x } }
