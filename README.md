@@ -1,7 +1,7 @@
 # Demo for GraphQL Groups
 
 To showcase [graphql-groups](https://github.com/hschne/graphql-groups) this demo project allows you to retrive statistical
-data surrounding a dataset of movies. 
+data surrounding a dataset of movies. You can play around with it here: [https://graphql-groups-demo.herokuapp.com/](https://graphql-groups-demo.herokuapp.com/)
 
 Movies have attributes like revenue, their release date and so on. See the queries below for some inspiration of what kind
 of information you can retrieve. 
