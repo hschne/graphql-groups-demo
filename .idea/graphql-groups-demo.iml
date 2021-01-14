@@ -51,8 +51,8 @@
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.13.1, asdf: 2.6.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, asdf: 2.6.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="graphiql-rails (v1.7.0, asdf: 2.6.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="graphql (v1.11.1, asdf: 2.6.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="graphql-groups (v0.1.2, asdf: 2.6.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="graphql (v1.11.6, asdf: 2.6.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="graphql-groups (v0.1.4@f812ee, asdf: 2.6.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="groupdate (v5.0.0, asdf: 2.6.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.5, asdf: 2.6.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.1.5, asdf: 2.6.6) [gem]" level="application" />
